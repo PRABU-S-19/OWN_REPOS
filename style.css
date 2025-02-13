@@ -54,7 +54,7 @@ body {
 
     background: url('https://www.svgbackgrounds.com/wp-content/uploads/2021/05/waves.svg');
 
-    background-size: cover;
+    background-size: contain;
 
     animation: waveAnimation 6s infinite linear;
 
