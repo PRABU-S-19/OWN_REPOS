@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #3498db 50%, #f4f4f4 50%);
+    clip-path: ellipse(100% 65% at 50% 0%);
+    z-index: -1;
+}
+
+@keyframes glowingText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.techfolio-logo {
+    position: absolute; /* Keeps it at the top-left */
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+
+   /* Light golden gradient */
+
+    background: linear-gradient(45deg, #FFD700, #FFEC8B, #FDF5E6, #EEDC82);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    
+    
+    /* Soft golden glow */
+
+    text-shadow: 0px 0px 6px rgba(255, 215, 0, 0.6),
+
+                 0px 0px 12px rgba(255, 236, 139, 0.5),
+
+                 0px 0px 18px rgba(238, 220, 130, 0.5);
+
+    /* Apply animation */
+    animation: glowingText 5s infinite linear;
+
+    /* Neon glow effect */
+    text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.7),
+                 0px 0px 20px rgba(0, 123, 255, 0.7),
+                 0px 0px 30px rgba(0, 234, 255, 0.7);
+}
+
+
+.techfolio-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    
+    /* Neon glowing effect */
+    background: linear-gradient(45deg, #ff00ff, #007bff, #00eaff, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Glowing shadow */
+    text-shadow: 0px 0px 8px rgba(255, 0, 255, 0.6), 
+                 0px 0px 12px rgba(0, 123, 255, 0.6),
+                 0px 0px 16px rgba(0, 234, 255, 0.6),
+                 0px 0px 20px rgba(255, 204, 0, 0.6);
+    
+    /* Animation for glowing */
+    animation: glowAnimation 1.5s infinite alternate;
+}
+
+@keyframes glowAnimation {
+    0% {
+        text-shadow: 0px 0px 8px rgba(255, 0, 255, 0.6), 
+                     0px 0px 12px rgba(0, 123, 255, 0.6),
+                     0px 0px 16px rgba(0, 234, 255, 0.6),
+                     0px 0px 20px rgba(255, 204, 0, 0.6);
+    }
+    50% {
+        text-shadow: 0px 0px 18px rgba(255, 0, 255, 1), 
+                     0px 0px 24px rgba(0, 123, 255, 1),
+                     0px 0px 32px rgba(0, 234, 255, 1),
+                     0px 0px 40px rgba(255, 204, 0, 1);
+    }
+    100% {
+        text-shadow: 0px 0px 8px rgba(255, 0, 255, 0.6), 
+                     0px 0px 12px rgba(0, 123, 255, 0.6),
+                     0px 0px 16px rgba(0, 234, 255, 0.6),
+                     0px 0px 20px rgba(255, 204, 0, 0.6);
+    }
+}
+
+
+
+
+
+.highlight {
+
+    font-size: 1.5em;
+
+    color: #4659E5; /* Change to any color you prefer */
+
+    font-weight: bold;
+
+}
+
+
+.email-button img {
+    border-radius: 15%; /* Makes the icon circular */
+}
+
+.email-button img {
+
+    width: 30px;  /* Adjust size */
+
+    height: 20px;
+
+}
+
+.linkedin-button img {
+    border-radius: 15%; /* Makes the icon circular */
+}
+
+.linkedin-button img {
+
+    width: 30px;  /* Adjust size */
+
+    height: 20px;
+
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
