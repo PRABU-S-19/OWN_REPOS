@@ -5,17 +5,37 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Smooth blue gradient */
 }
 
+/* Add wave effect using pseudo-element */
 .background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, #3498db 50%, #f4f4f4 50%);
-    clip-path: ellipse(100% 65% at 50% 0%);
+    background: linear-gradient(to bottom right, #3498db, #6dd5fa, #f4f4f4);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
     z-index: -1;
+}
+
+/* Alternative: Animated Wave SVG */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('https://www.svgbackgrounds.com/wp-content/uploads/2021/05/waves.svg');
+    background-size: cover;
+    animation: waveAnimation 6s infinite linear;
+}
+
+/* Wave animation */
+@keyframes waveAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 0; }
 }
 
 @keyframes glowingText {
