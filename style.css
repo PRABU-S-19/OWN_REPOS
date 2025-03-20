@@ -10,7 +10,7 @@ body {
 
     position: relative;
 
-    overflow: auto;
+    overflow-y: auto; /* Ensures scrolling */
 
     background: linear-gradient(to right, #1e3c72, #2a5298); /* Smooth blue gradient */
 
