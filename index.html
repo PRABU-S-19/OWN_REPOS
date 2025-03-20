@@ -30,6 +30,30 @@
             </a>
 
         </div>
+        <div class="certificate-container">
+        <h2>My Certificates</h2>
+        <ul class="certificate-list">
+            <li>
+                <button onclick="downloadCertificate('file:///C:/Users/PRABU/Desktop/PRABU/CyberSecurityCertificate.pdf')">Cyber Security Foundation Certificate</button>
+            </li>
+            <li>
+                <button onclick="downloadCertificate('file:///C:/Users/PRABU/Desktop/PRABU/ICT_ACADEMY_LEARNATHON.pdf')">ICT Certificate</button>
+            </li>
+            <li>
+                <button onclick="downloadCertificate('file:///C:/Users/PRABU/Desktop/PRABU/Certificate%20POWER%20%20BI.pdf')">PowerBI Certificate</button>
+            </li>
+        </ul>
+    </div>
+<script>
+        function downloadCertificate(fileName) {
+            const link = document.createElement("a");
+            link.href = fileName;  // Ensure the file is in the same directory
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
     </header>
     <footer>
         <p> &copy; 2024 PRABU S</p>
